@@ -1,0 +1,28 @@
+{
+    "files.associations": {
+        "algorithm": "cpp",
+        "chrono": "cpp",
+        "compare": "cpp",
+        "exception": "cpp",
+        "format": "cpp",
+        "forward_list": "cpp",
+        "istream": "cpp",
+        "iterator": "cpp",
+        "map": "cpp",
+        "memory": "cpp",
+        "mutex": "cpp",
+        "optional": "cpp",
+        "stop_token": "cpp",
+        "thread": "cpp",
+        "tuple": "cpp",
+        "type_traits": "cpp",
+        "utility": "cpp",
+        "vector": "cpp",
+        "xmemory": "cpp",
+        "xstring": "cpp",
+        "xtree": "cpp",
+        "xutility": "cpp",
+        "iostream": "cpp",
+        "ostream": "cpp"
+    }
+}
