@@ -1,0 +1,7 @@
+make.exe --dry-run --always-make --keep-going --print-directory
+make: Entering directory 'h:/OneDrive - std.uestc.edu.cn/Project/Skiplist-CPP-master/Skiplist-CPP-master'
+g++ -std=c++0x   -c -o main.o main.cpp
+g++   -o ./bin/main main.o --std=c++11 -pthread 
+rm -f ./*.o
+make: Leaving directory 'h:/OneDrive - std.uestc.edu.cn/Project/Skiplist-CPP-master/Skiplist-CPP-master'
+ 

@@ -9,43 +9,84 @@
 #define TEST_COUNT 100000
 SkipList<int, std::string> skipList(18);
 
-void *insertElement(void* threadid) {
-    long tid; 
+// 插入元素的线程工作函数
+void *insertElement(void *threadid)
+{
+    long tid;
     tid = (long)threadid;
-    std::cout << tid << std::endl;  
-    int tmp = TEST_COUNT/NUM_THREADS; 
-	for (int i=tid*tmp, count=0; count<tmp; i++) {
+    std::cout << tid << std::endl;
+    int tmp = TEST_COUNT / NUM_THREADS;
+    for (int i = tid * tmp, count = 0; count < tmp; i++)
+    {
         count++;
-		skipList.insert_element(rand() % TEST_COUNT, "a"); 
-	}
+        skipList.insert_element(rand() % TEST_COUNT, "a");
+    }
     pthread_exit(NULL);
 }
 
-void *getElement(void* threadid) {
-    long tid; 
+// 读取元素的线程工作函数
+void *getElement(void *threadid)
+{
+    long tid;
     tid = (long)threadid;
-    std::cout << tid << std::endl;  
-    int tmp = TEST_COUNT/NUM_THREADS; 
-	for (int i=tid*tmp, count=0; count<tmp; i++) {
+    std::cout << tid << std::endl;
+    int tmp = TEST_COUNT / NUM_THREADS;
+    for (int i = tid * tmp, count = 0; count < tmp; i++)
+    {
         count++;
-		skipList.search_element(rand() % TEST_COUNT); 
-	}
+        skipList.search_element(rand() % TEST_COUNT);
+    }
     pthread_exit(NULL);
 }
 
-int main() {
-    srand (time(NULL));  
+int main()
+{
+    srand(time(NULL));
     {
 
         pthread_t threads[NUM_THREADS];
         int rc;
-        int i;
+        long i; // 避免转为void*时大小不一致的转换
 
+        auto start = std::chrono::high_resolution_clock::now(); // 计时开始
+
+        for (i = 0; i < NUM_THREADS; i++)
+        {
+            std::cout << "main() : creating thread, " << i << std::endl;
+            rc = pthread_create(&threads[i], NULL, insertElement, (void *)i);
+
+            if (rc)
+            {
+                std::cout << "Error:unable to create thread," << rc << std::endl;
+                exit(-1);
+            }
+        }
+
+        void *ret;
+        for (i = 0; i < NUM_THREADS; i++)
+        {
+            if (pthread_join(threads[i], &ret) != 0)
+            {
+                perror("pthread_create() error");
+                exit(3);
+            }
+        }
+        auto finish = std::chrono::high_resolution_clock::now(); // 计时结束
+        std::chrono::duration<double> elapsed = finish - start;
+        std::cout << "insert elapsed:" << elapsed.count() << std::endl; // 打印所花时间
+    }
+    
+    skipList.display_list();
+
+    {
+        pthread_t threads[NUM_THREADS];
+        int rc;
+        long i;
         auto start = std::chrono::high_resolution_clock::now();
 
         for( i = 0; i < NUM_THREADS; i++ ) {
             std::cout << "main() : creating thread, " << i << std::endl;
-            rc = pthread_create(&threads[i], NULL, insertElement, (void *)i);
+            rc = pthread_create(&threads[i], NULL, getElement, (void *)i);
 
             if (rc) {
                 std::cout << "Error:unable to create thread," << rc << std::endl;
@@ -56,46 +97,16 @@ int main() {
         void *ret;
         for( i = 0; i < NUM_THREADS; i++ ) {
             if (pthread_join(threads[i], &ret) !=0 )  {
-                perror("pthread_create() error"); 
+                perror("pthread_create() error");
                 exit(3);
             }
         }
-        auto finish = std::chrono::high_resolution_clock::now(); 
+
+        auto finish = std::chrono::high_resolution_clock::now();
         std::chrono::duration<double> elapsed = finish - start;
-        std::cout << "insert elapsed:" << elapsed.count() << std::endl;
+        std::cout << "get elapsed:" << elapsed.count() << std::endl;
     }
-    // skipList.displayList();
 
-    // {
-    //     pthread_t threads[NUM_THREADS];
-    //     int rc;
-    //     int i;
-    //     auto start = std::chrono::high_resolution_clock::now();
-
-    //     for( i = 0; i < NUM_THREADS; i++ ) {
-    //         std::cout << "main() : creating thread, " << i << std::endl;
-    //         rc = pthread_create(&threads[i], NULL, getElement, (void *)i);
-
-    //         if (rc) {
-    //             std::cout << "Error:unable to create thread," << rc << std::endl;
-    //             exit(-1);
-    //         }
-    //     }
-
-    //     void *ret;
-    //     for( i = 0; i < NUM_THREADS; i++ ) {
-    //         if (pthread_join(threads[i], &ret) !=0 )  {
-    //             perror("pthread_create() error"); 
-    //             exit(3);
-    //         }
-    //     }
-
-    //     auto finish = std::chrono::high_resolution_clock::now(); 
-    //     std::chrono::duration<double> elapsed = finish - start;
-    //     std::cout << "get elapsed:" << elapsed.count() << std::endl;
-    // }
-
-	pthread_exit(NULL);
+    pthread_exit(NULL);
     return 0;
-
 }

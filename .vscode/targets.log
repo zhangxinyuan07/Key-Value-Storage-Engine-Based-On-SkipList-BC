@@ -1,0 +1,317 @@
+make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
+# GNU Make 4.3
+# Built for Windows32
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Thu Jul 14 10:11:55 2022
+
+# Variables
+
+# environment
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
+# environment
+SYSTEMDRIVE = C:
+# environment
+UGII_ROOT_DIR = E:\UG10\UGII\
+# environment
+LC_ALL = C
+# environment
+USERPROFILE = C:\Users\Administrator
+# environment
+LOCALAPPDATA = C:\Users\Administrator\AppData\Local
+# environment
+VSCODE_CWD = H:\OneDrive - std.uestc.edu.cn\Project\Skiplist-CPP-master\Skiplist-CPP-master
+# environment
+CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
+# environment
+SYSTEMROOT = C:\Windows
+# environment
+PROCESSOR_LEVEL = 6
+# environment
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules
+# default
+MAKE_COMMAND := make.exe
+# automatic
+@D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
+# environment
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_15776_MEREZAKKLIONYAKI
+# environment
+ONEDRIVECOMMERCIAL = H:\OneDrive - std.uestc.edu.cn
+# environment
+FPS_BROWSER_USER_PROFILE_STRING = Default
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# automatic
+%D = $(patsubst %/,%,$(patsubst %\,%,$(dir $%)))
+# environment
+AWP_ROOT212 = E:\ANSYS Inc\ANSYS Student\v212
+# environment
+SPLM_LICENSE_SERVER = 28000@desktop-91oae0i
+# automatic
+^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = C:\Users\Administrator\AppData\Roaming\Code\CachedData\92d25e35d9bf1a6b16f7d0758f25d48ace11e5b9
+# environment
+LANG = C
+# default
+.LOADED := 
+# environment
+TMP = C:\Users\Administrator\AppData\Local\Temp
+# default
+.INCLUDE_DIRS = .
+# makefile
+MAKEFLAGS = pqrR
+# environment
+ONEDRIVE = H:\OneDrive - std.uestc.edu.cn
+# makefile
+CURDIR := h:/OneDrive - std.uestc.edu.cn/Project/Skiplist-CPP-master/Skiplist-CPP-master
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# automatic
+*D = $(patsubst %/,%,$(patsubst %\,%,$(dir $*)))
+# environment
+PROGRAMFILES = C:\Program Files
+# environment
+MFLAGS = -pqrR
+# default
+.SHELLFLAGS := -c
+# environment
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# automatic
++D = $(patsubst %/,%,$(patsubst %\,%,$(dir $+)))
+# environment
+ANSYS212_DIR = E:\ANSYS Inc\ANSYS Student\v212\ANSYS
+# makefile (from 'makefile', line 1)
+MAKEFILE_LIST := makefile
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_PID = 15776
+# automatic
+?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
+# automatic
+*F = $(notdir $*)
+# environment
+WXDRIVE_START_ARGS = --wxdrive-setting=0 --disable-gpu --disable-software-rasterizer --enable-features=NetworkServiceInProcess
+# environment
+UGII_LANG = simpl_chinese
+# automatic
+<D = $(patsubst %/,%,$(patsubst %\,%,$(dir $<)))
+# environment
+P_SCHEMA = E:\ANSYS Inc\ANSYS Student\v212\AISOL\CADIntegration\Parasolid\PSchema
+# environment
+VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"c9280508cf500dcd9c4c87fe2a1b08e9.zh-cn","_translationsConfigFile":"C:\\Users\\Administrator\\AppData\\Roaming\\Code\\clp\\c9280508cf500dcd9c4c87fe2a1b08e9.zh-cn\\tcf.json","_cacheRoot":"C:\\Users\\Administrator\\AppData\\Roaming\\Code\\clp\\c9280508cf500dcd9c4c87fe2a1b08e9.zh-cn","_resolvedLanguagePackCoreLocation":"C:\\Users\\Administrator\\AppData\\Roaming\\Code\\clp\\c9280508cf500dcd9c4c87fe2a1b08e9.zh-cn\\92d25e35d9bf1a6b16f7d0758f25d48ace11e5b9","_corruptedFile":"C:\\Users\\Administrator\\AppData\\Roaming\\Code\\clp\\c9280508cf500dcd9c4c87fe2a1b08e9.zh-cn\\corrupted.info","_languagePackSupport":true}
+# default
+MAKE_HOST := Windows32
+# environment
+PROGRAMDATA = C:\ProgramData
+# default
+SHELL := sh.exe
+# environment
+HOMEPATH = \Users\Administrator
+# default
+MAKECMDGOALS := all
+# environment
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# environment
+COMSPEC = C:\Windows\system32\cmd.exe
+# environment
+WINDIR = C:\Windows
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+PATH = C:\Users\Administrator\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python310\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\MATLAB\MATLAB Runtime\v95\runtime\win64;E:\MATLAB2021A\runtime\win64;E:\MATLAB2021A\bin;E:\MATLAB2021A\polyspace\bin;C:\Program Files\dotnet\;C:\Program Files\Google\Chrome\Application;D:\Xshell 7\;D:\Xftp 7\;E:\Git\cmd;C:\Program Files\Pandoc\;E:\texlive\2022\bin\win32;E:\Node.js\;C:\ProgramData\chocolatey\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\Administrator\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python310\;C:\Users\Administrator\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python39\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\.dotnet\tools;C:\Program Files\Google\Chrome\Application;D:\Microsoft VS Code\bin;D:\MinGW\bin;C:\Users\Administrator\AppData\Roaming\npm;E:\Node.js\node_global;C:\Users\Administrator\AppData\Local\GitHubDesktop\bin
+# environment
+ZES_ENABLE_SYSMAN = 1
+# environment
+COMPUTERNAME = DESKTOP-91OAE0I
+# default
+MAKEFILES := 
+# automatic
+^F = $(notdir $^)
+# environment
+PROMPT = $P$G
+# environment
+CHOCOLATEYLASTPATHUPDATE = 133003704003477514
+# environment
+LOGONSERVER = \\DESKTOP-91OAE0I
+# environment
+USERNAME = Administrator
+# environment
+COMMONPROGRAMFILES = C:\Program Files\Common Files
+# automatic
+?F = $(notdir $?)
+# environment
+PROGRAMW6432 = C:\Program Files
+# environment
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW
+# automatic
++F = $(notdir $+)
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+USERDOMAIN = DESKTOP-91OAE0I
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+OS = Windows_NT
+# environment
+IDEM_LATEST = E:\CST_Studio_Suite_2020\AMD64
+# environment
+MCR_INHIBIT_CTF_LOCK = 1
+# environment
+OPERAFEA20 = E:\Opera\
+# makefile
+.DEFAULT_GOAL := skiplist
+# environment
+CRX_PATH_2021_X64 = E:\CAXA\CRX\
+# default
+MAKE_VERSION := 4.3
+# environment
+AWP_LOCALE212 = zh
+# environment
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# environment
+LSTC_LICENSE = Ansys
+# environment
+USERDOMAIN_ROAMINGPROFILE = DESKTOP-91OAE0I
+# environment
+NUMBER_OF_PROCESSORS = 16
+# environment
+PUBLIC = C:\Users\Public
+# environment
+ASL.LOG = Destination=file
+# environment
+APPDATA = C:\Users\Administrator\AppData\Roaming
+# makefile (from 'makefile', line 3)
+CFLAGS = -I
+# environment
+HOMEDRIVE = C:
+# environment
+MYSQL = E:\MySQL\MySQL Server 8.0\bin
+# environment
+PROCESSOR_ARCHITECTURE = AMD64
+# environment
+NODE_PATH = E:\Node.js\node_global\node_modules
+# environment
+UGII_BASE_DIR = E:\UG10
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+TEMP = C:\Users\Administrator\AppData\Local\Temp
+# environment
+VSCODE_IPC_HOOK = \\.\pipe\9e7283c68e6159fd1e9872b65f264be5-1.69.0-main-sock
+# environment
+CADOE_LIBDIR212 = E:\ANSYS Inc\ANSYS Student\v212\CommonFiles\Language\zh
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# default
+SUFFIXES := 
+# environment
+ALLUSERSPROFILE = C:\ProgramData
+# environment
+SESSIONNAME = Console
+# makefile (from 'makefile', line 2)
+CXXFLAGS = -std=c++0x
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync load
+# environment
+PROCESSOR_REVISION = a701
+# makefile (from 'makefile', line 1)
+CC = g++  
+# environment
+PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 167 Stepping 1, GenuineIntel
+# variable set hash-table stats:
+# Load=113/1024=11%, Rehash=0, Collisions=10/140=7%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (key h:/OneDrive - std.uestc.edu.cn/Project/Skiplist-CPP-master/Skiplist-CPP-master, mtime 1657612023): 13 files, no impossibilities.
+
+# 13 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+skiplist: main.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 5):
+	$(CC) -o ./bin/main main.o --std=c++11 -pthread 
+	rm -f ./*.o
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 9):
+	rm -f ./*.o
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+main.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-04-27 00:03:05
+#  File has been updated.
+#  Successfully updated.
+
+# files hash-table stats:
+# Load=7/1024=1%, Rehash=0, Collisions=0/18=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 19 / storage = 153 B / avg = 8 B
+# current buf: size = 8162 B / used = 153 B / count = 19 / avg = 8 B
+
+# strcache performance: lookups = 25 / hit rate = 24%
+# hash-table stats:
+# Load=19/8192=0%, Rehash=0, Collisions=0/25=0%
+# Finished Make data base on Thu Jul 14 10:11:55 2022
+
+ 
