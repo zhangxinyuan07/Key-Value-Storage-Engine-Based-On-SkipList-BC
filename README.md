@@ -20,12 +20,14 @@
 
 # 提供接口
 
-* insertElement（插入数据）
-* deleteElement（删除数据）
-* searchElement（查询数据）
-* displayList（展示已存数据）
-* dumpFile（数据落盘）
-* loadFile（加载数据）
+* insert_element（插入数据）
+* delete_element（删除数据）
+* search_element（查询数据）
+* expire_element(设置过期时间)
+* ttl_element(显示剩余时间)
+* display_list（展示已存数据）
+* dump_file（数据落盘）
+* load_file（加载数据）
 * size（返回数据规模）
 
 

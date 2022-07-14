@@ -196,7 +196,6 @@ public:
     bool delete_element(K);
     void expire_element(K, int);
     int ttl_element(K);
-    int isExpire(K);
     void dump_file();
     void load_file();
     int size();
@@ -204,6 +203,7 @@ public:
 private:
     void get_key_value_from_string(const string &str, string *key, string *value);
     bool is_valid_string(const string &str);
+    int isExpire(K);
 
 private:
     // 跳表的最大层数
